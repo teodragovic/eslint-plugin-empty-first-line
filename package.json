@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-empty-first-line",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Require or disallow newline at the begining of files",
   "main": "index.js",
   "scripts": {

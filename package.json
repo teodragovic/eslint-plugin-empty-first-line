@@ -1,11 +1,21 @@
 {
   "name": "eslint-plugin-empty-first-line",
   "version": "1.0.0",
-  "description": "",
+  "description": "Require or disallow newline at the begining of files",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "major-release": "npm version major && npm publish && git push --follow-tags",
+    "minor-release": "npm version minor && npm publish && git push --follow-tags",
+    "patch-release": "npm version patch && npm publish && git push --follow-tags",
+    "test": "./node_modules/.bin/mocha tests/**/*.js"
   },
-  "author": "",
-  "license": "ISC"
+  "peerDependencies": {
+    "eslint": "^6.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "mocha": "^8.0.1"
+  },
+  "author": "Teo Dragovic",
+  "license": "MIT"
 }
